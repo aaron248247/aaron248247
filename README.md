@@ -1,48 +1,44 @@
 # Computational Physics & Engineering
 
-I develop computational physics projects focused on electromagnetic wave propagation, photonics, numerical simulation, and radar signal processing.
+I'm a quantitative analyst with graduate training in physics. My interests are in computational electromagnetics, photonics, and radar signal processing.
 
-My work combines analytical physics, numerical modeling, and scientific computing. I emphasize verification against theoretical benchmarks, numerical convergence, reproducibility, and careful interpretation of computational results.
+I enjoy working through the physics behind a problem, building a numerical model, and checking whether the results agree with what theory predicts. The projects below reflect that approach, with an emphasis on verification, convergence, and understanding the limitations of the models.
 
-My background includes graduate training in physics and professional experience in quantitative analysis.
-
-## Featured Research Projects
+## Projects
 
 ### 1. [Photonic-Crystal True-Time-Delay Beamforming](https://github.com/aaron248247/pc-ttd-beamforming)
 
-Computational investigation of W1 photonic-crystal delay lines for true-time-delay phased-array beamforming.
+This project investigates W1 photonic-crystal waveguides as potential delay elements for phased-array beamforming.
 
-The project combines electromagnetic modeling using MEEP and MPB with numerical verification and array-level analysis. It examines the relationship between photonic propagation characteristics, time delay, and beam-steering behavior.
+It uses MEEP and MPB to study electromagnetic propagation and dispersion, then connects the calculated delays to phased-array steering behavior. The repository includes numerical verification, simulation results, and array-level analysis.
 
-**Key areas:** Photonic crystals, computational electromagnetics, FDTD, dispersion, true-time delay, phased arrays.
+**Topics:** Photonic crystals, FDTD, dispersion, group delay, phased arrays.
 
-### 2. [Computational Electromagnetic Scattering and Metasurfaces](https://github.com/aaron248247/computational-em-scattering-lab)
+### 2. [Electromagnetic Scattering and Periodic Structures](https://github.com/aaron248247/computational-em-scattering-lab)
 
-Numerical investigation of dielectric-cylinder scattering and periodic electromagnetic structures.
+This project started with a straightforward question: how accurately can an FDTD simulation reproduce the analytical scattering solution for a dielectric cylinder?
 
-The project uses analytical Mie scattering as a verification benchmark for FDTD simulations, then extends the investigation to periodic arrays of dielectric cylinders. It includes convergence studies, scattering analysis, resonance investigations, and polarization-dependent behavior.
+The first part compares numerical results against Mie theory and examines convergence. The second extends the model to a periodic array of dielectric cylinders, studying how lattice spacing, polarization, and incidence angle affect the electromagnetic response.
 
-**Key areas:** Maxwell's equations, Mie theory, FDTD, near-to-far-field transformations, numerical convergence, periodic structures, metasurfaces.
+**Topics:** Maxwell's equations, Mie scattering, FDTD, resonances, periodic structures.
 
 ### 3. [Array Signal Processing and Radar Simulation](https://github.com/aaron248247/array-signal-processing-lab)
 
-Computational study of antenna-array processing and radar detection methods.
+This project explores several methods used in antenna arrays and radar processing.
 
-The project implements and evaluates conventional and MVDR beamforming, covariance estimation, jammer suppression, steering mismatch, matched filtering, Doppler processing, and constant false-alarm rate (CFAR) detection. Analytical checks and numerical experiments are used to evaluate performance and robustness.
+It includes conventional and MVDR beamforming, covariance estimation, jammer suppression, pulse compression, Doppler processing, and CFAR detection. The experiments examine performance under different conditions, including steering errors and interference.
 
-**Key areas:** Array signal processing, beamforming, statistical signal processing, radar, detection theory, numerical verification.
+**Topics:** Array processing, adaptive beamforming, radar, detection theory, numerical simulation.
 
-## Technical Interests
+## Tools and Methods
 
-- **Computational electromagnetics:** Maxwell solvers, FDTD methods, scattering, resonances, and boundary conditions.
-- **Photonics:** Photonic crystals, dispersion engineering, waveguides, and electromagnetic structures.
-- **Radar and signal processing:** Phased arrays, adaptive beamforming, pulse compression, Doppler processing, and statistical detection.
-- **Scientific computing:** Python-based numerical methods, analytical benchmarks, automated testing, convergence analysis, and reproducible experiments.
+Most of my computational work uses Python, NumPy, SciPy, and scientific visualization tools. For electromagnetic simulations, I use MEEP and MPB.
 
-## Research and Computational Approach
+Across these projects, I focus on:
 
-I aim to develop computational models that are not only functional but also physically interpretable and numerically defensible.
+- Comparing numerical calculations with analytical results where possible.
+- Checking convergence and sensitivity to numerical parameters.
+- Testing how models behave when assumptions or operating conditions change.
+- Keeping the code, results, and documentation organized so experiments can be reproduced.
 
-My projects emphasize the connection between underlying theory, implementation choices, verification tests, and observed numerical results. Each repository contains documentation describing its methods, experiments, and limitations.
-
-For implementation details, figures, and reproducibility instructions, see the individual project repositories above.
+Each repository contains more detail about its numerical methods, results, and limitations.
