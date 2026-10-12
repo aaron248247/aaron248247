@@ -1,6 +1,6 @@
 # Computational Physics & Engineering
 
-I am interested in computational physics, with a focus on electromagnetic wave propagation, photonics, numerical simulation, and radar signal processing.
+I develop computational physics projects focused on electromagnetic wave propagation, photonics, numerical simulation, and radar signal processing.
 
 My work combines analytical physics, numerical modeling, and scientific computing. I emphasize verification against theoretical benchmarks, numerical convergence, reproducibility, and careful interpretation of computational results.
 
